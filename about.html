@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About us</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap-grid.min.css" integrity="sha512-ZuRTqfQ3jNAKvJskDAU/hxbX1w25g41bANOVd1Co6GahIe2XjM6uVZ9dh0Nt3KFCOA061amfF2VeL60aJXdwwQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+      *{
+    margin: 0;
+    padding: 0;
+    font-family: poppins', sans-serif;
+}
+body{
+  overflow-x: hidden;
+}
+ul {
+  list-style-type: none;
+  margin: 10px;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #3f3939;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  list-style-type: none;
+}
+li a:hover:not(.active) {
+  background-color: #ddd;
+}
+.active {
+  background-color: #04AA6D;
+}
+.text-box h1{
+        font-size: 50px;
+        line-height: 110px;
+        margin-left: -10px;
+        color:  #fff;
+        -webkit-text-stroke: none;
+        -webkit-background-clip: text;
+        background-position: 0;
+        animation: back 20s linear infinite;
+    }
+    .wrapper{
+  max-width: 1260px;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  height: 200px;
+}
+.wrapper .box{
+  background: #fff;
+  border-radius: 3px;
+  width: calc(33% - 10px);
+}
+
+.wrapper .box .content{
+ padding-top: 10px;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+.wrapper .box .info .name{
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.wrapper .box .content .image{
+  height: 75px;
+  width: 75px;
+  padding: 3px;
+  background: #17a2b8;
+  border-radius: 50%;
+}
+.box .content .image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #fff
+}
+
+@media (max-width: 1045px){
+  .wrapper .box{
+      width: calc(50% - 10px);
+      margin: 10px 0;
+  }
+}
+@media (max-width: 702px){
+  .wrapper .box{
+      width:100%;
+  }
+}
+.container{
+  max-width: 1170px;
+  margin: auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+nav{
+  list-style: none;
+}
+.footer{
+  background-color: #24262b;
+  padding: 70px 0;
+}
+.footer-col{
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4{
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col nav:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-col nav a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col nav a :hover{
+  color: #ffffff;
+  padding-left: 8px;
+}
+.fa {
+padding: 20px;
+font-size: 30px;
+text-align: center;
+text-decoration: none;
+margin: 5px 2px;
+border-radius: 50%;
+  }
+.fa:hover {
+opacity: 0.7;
+}
+.fa-facebook {
+background: #3B5998;
+color: white;
+}
+
+.fa-twitter {
+background: #55ACEE;
+color: white;
+}
+.fa-linkedin {
+background: #007bb5;
+color: white;
+}
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="col-sm-2">
+          <a href="index.html"><img src="images/game.png" style="height: 70px; width: 90px;"></a>
+        </div>
+        <div class="col-sm-10">
+            <nav style="float: right;">
+                <ul>
+                    <li><a href="index.html" style="text-decoration: none; list-style-type: none;">Home</a></li>
+                    <li><a class="active" href="about.html" style="text-decoration: none; list-style-type: none;">About</a></li>
+                    <li><a href="contact.html" style="text-decoration: none; list-style-type: none;">Contact</a></li>
+                    <li><a href="shopnow.html" style="text-decoration: none; list-style-type: none;">Shop Now</a></li>
+                    <li><a href="#" style="text-decoration: none; list-style-type: none;">Server</a></li>
+                  </ul>
+              </nav> 
+        </div>
+    </div>
+    <div class="container">
+      <div class="row" style="background-color: rgb(90, 90, 120);">
+        <div class="col-sm-6">
+            <img src="images/removebg.png" style="height:400px; width: 100%; margin: 10px 0 0 10px;">
+        </div>
+        <div class="col-sm-6">
+          <div class="container1">
+            <div class="text-box">
+                <h1>The beginning</h1>
+                <p>Lorem ipsum ea ut magna nisi amet reprehenderit eu adipisicing nisi incididunt est sint 
+                  fugiat deserunt tempor ea culpa nostrud commodo deserunt et do ullamco non tempor veniam id culpa mollit veniam 
+                  ut non adipisicing ad commodo laborum esse do sunt in cillum irure incididunt officia quis ut.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><br/>
+    <div class="container" style="width: 700px;">
+      <div class="row" style="background-color: rgb(90, 90, 120);">
+        <div class="col-sm-6">
+          <h1 style="color: #fff;">Our Vision</h1>
+            <p style="text-align: justify;  font-size: 20px;">Adipisicing pariatur dolor pariatur officia aliqua ex irure aliqua ut exercitation 
+              nulla exercitation esse duis do commodo exercitation sed exercitation aliquip fugiat. 
+              Dolor ad amet sed aliqua ad nisi anim fugiat dolor labore ex non amet id mollit amet 
+              id magna elit fugiat voluptate aliquip in est quis aliquip aliqua eu. 
+              Lorem ipsum irure sed nisi id aute exercitation fugiat.</p>
+            
+        </div>
+        <div class="col-sm-6">
+            <h1 style="color: #fff;">Our Mission</h1>
+            <p style="text-align: justify; font-size: 20px;">Adipisicing pariatur dolor pariatur officia aliqua ex irure aliqua ut exercitation nulla exercitation esse duis do commodo exercitation sed exercitation aliquip fugiat. 
+               Ut excepteur deserunt labore exercitation commodo exercitation minim aliquip in aliqua deserunt nulla aliquip officia ut eiusmod irure ullamco sunt sunt velit dolor ex.
+               Enim eu proident in non officia culpa.</p>    
+        </div>
+      </div>
+    </div><br/>
+    <div class="container-fluied">
+      <div class="wrapper" style="height: 400px; background-color: rgb(90, 90, 120);">
+        <div class="box" style="background-color: rgb(131, 131, 146);">
+            <i class="fas fa-quote-left quote"></i>
+            <p style="color: aliceblue;">In promotion and advertising, a testimonial or show consists of a person's written or spoken statement extolling the virtue of a product. 
+                The term "testimonial" most commonly applies to the sales-pitches attributed to ordinary citizens, whereas the word "endorsement" usually
+                </p>
+            <div class="content">
+            <div class="image">
+                <img src="images/icon.png" alt="">
+              </div>
+           </div>
+        </div>
+        <div class="box" style="background-color: rgb(131, 131, 146);">
+            <i class="fas fa-quote-left quote"></i>
+            <p style="color: aliceblue;">In promotion and advertising, a testimonial or show consists of a person's written or spoken statement extolling the virtue of a product. 
+                The term "testimonial" most commonly applies to the sales-pitches attributed to ordinary citizens, whereas the word "endorsement" usually
+                a testimonial or show consists of a person's written or spoken statement extolling the virtue of a product. 
+                Celebrity endorsements have proven very successful in China, where increasing consumerism makes the purchase of an endorsed product into a status symbol. </p>
+            <div class="content">
+            <div class="image">
+                <img src="images/icon.png" alt="">
+              </div>
+           </div>
+        </div>
+        <div class="box" style="background-color: rgb(131, 131, 146);">
+            <i class="fas fa-quote-left quote"></i>
+            <p style="color: aliceblue;">In promotion and advertising, a testimonial or show consists of a person's written or spoken statement extolling the virtue of a product. 
+                The term "testimonial" most commonly applies to the sales-pitches attributed to ordinary citizens, whereas the word "endorsement" usually
+                </p>
+            <div class="content">
+            <div class="image">
+                <img src="images/icon.png" alt="">
+              </div>
+           </div>
+        </div>
+    </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+          <div class="row">
+              <div class="footer-col">
+                  <h4>Company</h4>
+                  <nav>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="#">Affiliate Program</a>
+                  </nav>
+              </div>
+              <div class="footer-col">
+                  <h4> Get help</h4>
+                  <nav>
+                      <a href="#">FAQ</a>
+                      <a href="#">Shipping</a>
+                      <a href="#">Returns</a>
+                      <a href="#">Order Status</a>
+                      <a href="#">Payment Options</a>
+                  </nav>
+              </div>
+              <div class="footer-col">
+                  <h4>Oline shop</h4>
+                  <nav>
+                      <a href="#">Play Stations</a>
+                      <a href="#">Controllers</a>
+                      <a href="#">Watch</a>
+                      <a href="#">Bag</a>
+              </div>
+              <div class="footer-col">
+                  <h4>Follow us</h4>
+                  <div class="icons">
+                      <a href="#" class="fa fa-linkedin" style="font-size: 20px;"></a>
+                      <a href="#" class="fa fa-facebook" style="font-size: 20px;"></a>
+                      <a href="#" class="fa fa-twitter" style="font-size: 20px;"></a> 
+                  </div>
+              </div>
+      </div>
+  </footer>
+</body>
+</html>

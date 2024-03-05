@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shop Now</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap-grid.min.css" integrity="sha512-ZuRTqfQ3jNAKvJskDAU/hxbX1w25g41bANOVd1Co6GahIe2XjM6uVZ9dh0Nt3KFCOA061amfF2VeL60aJXdwwQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+ul {
+  list-style-type: none;
+  margin: 10px;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #3f3939;
+  text-align: center;
+  padding: 14px 16px;
+}
+li a:hover:not(.active) {
+  background-color: #ddd;
+}
+.active {
+  background-color: #04AA6D;
+}
+.it {
+  background-image: url(https://videogames.si.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTk5MTI0Njg4NDMyMDE1MTIx/cyberpunk-2077-night-city.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 2500px;
+  width: 100%;
+ }
+ .child{
+  margin-top: 200px;
+  padding: 80px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: 30px;
+ }
+ .flip-card {
+  border-radius: 10%;
+  height:250px; 
+  width: 180px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute; 
+  height:250px; 
+  width: 180px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background: linear-gradient(45deg, #7e7d7d, #8d2239, #ff1b32, #716464);
+  color: white;
+  transform: rotateY(180deg);
+}
+.container{
+  max-width: 1170px;
+  margin: auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+nav{
+  list-style: none;
+}
+.footer{
+  background-color: #24262b;
+  padding: 70px 0;
+}
+.footer-col{
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4{
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col nav:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-col nav a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col nav a :hover{
+  color: #ffffff;
+  padding-left: 8px;
+}
+.fa {
+padding: 20px;
+font-size: 30px;
+width: 60px;
+text-align: center;
+text-decoration: none;
+margin: 5px 2px;
+border-radius: 50%;
+  }
+.fa:hover {
+opacity: 0.7;
+}
+.fa-facebook {
+background: #3B5998;
+color: white;
+}
+
+.fa-twitter {
+background: #55ACEE;
+color: white;
+}
+.fa-linkedin {
+background: #007bb5;
+color: white;
+}
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="it">    
+        <div class="col-sm-2">
+          <a href="index.html"><img src="images/game.png" style="height: 70px; width: 90px;"></a>
+        </div>
+        <div class="col-sm-10">
+            <nav style="float: right;">
+                <ul>
+                    <li><a href="index.html" style="text-decoration: none; list-style-type: none;">Home</a></li>
+                    <li><a href="about.html" style="text-decoration: none; list-style-type: none;">About</a></li>
+                    <li><a href="contact.html" style="text-decoration: none; list-style-type: none;">Contact</a></li>
+                    <li><a class="active" href="shopnow.html" style="text-decoration: none; list-style-type: none;">Shopw Now</a></li>
+                    <li><a href="#" style="text-decoration: none; list-style-type: none;">Server</a></li>
+                  </ul>
+              </nav> 
+        </div>
+
+
+        <div class="container-fluied">
+        <div class="row child">
+          <div class="col-sm-3">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmrcMKsgXBjMqU99xTR5-oxVJfFDU6-BNmxRIwUY0-QifHxWYl7aSD-agh4jqudfN_ELI&usqp=CAU" style="height:250px; width: 180px;">
+                </div>
+                <div class="flip-card-back">
+                  <h1>Call Of Duty</h1> 
+                  <a href="payment.html"><button type="button" class="btn btn-primary" style="width: 110px; color: rgb(252, 158, 245);">ORDER NOW</button></a><br/>
+                  <i class="fa fa-cart-arrow-down" style="font-size:48px;color:rgb(243, 235, 235)"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="https://w0.peakpx.com/wallpaper/196/975/HD-wallpaper-gta-v.jpg" style="height:250px; width: 180px;">
+                </div>
+                <div class="flip-card-back">
+                  <h1>GTA</h1> 
+                  <a href="payment.html"><button type="button" class="btn btn-primary" style="width: 110px; color: rgb(252, 158, 245);">ORDER NOW</button></a><br/>
+                  <i class="fa fa-cart-arrow-down" style="font-size:48px;color:rgb(243, 235, 235)"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="https://e0.pxfuel.com/wallpapers/843/748/desktop-wallpaper-phone-gamer-android-ios-game-iphone-best-gaming-gaming-mobile-gamer-thumbnail.jpg" style="height:250px; width: 180px;">
+                </div>
+                <div class="flip-card-back">
+                  <h1>Game Zone</h1> 
+                  <a href="payment.html"><button type="button" class="btn btn-primary" style="width: 110px; color: rgb(252, 158, 245);">ORDER NOW</button></a><br/>
+                  <i class="fa fa-cart-arrow-down" style="font-size:48px;color:rgb(243, 235, 235)"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="https://i.pinimg.com/originals/01/14/8a/01148aa6890051055e6dcf3c85cbe7f7.jpg" style="height:250px; width: 180px;">
+                </div>
+                <div class="flip-card-back">
+                  <h1>Free Fire</h1> 
+                  <a href="payment.html"><button type="button" class="btn btn-primary" style="width: 110px; color: rgb(252, 158, 245);">ORDER NOW</button></a><br/>
+                  <i class="fa fa-cart-arrow-down" style="font-size:48px;color:rgb(243, 235, 235)"></i>
+                </div>
+              </div>
+            </div>
+          </div>      
+        </div>
+
+        <div class="row child">
+          <div class="col-sm-3">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="https://cdn.bhdw.net/im/are-you-ready-playerunknown-s-battlegrounds-guy-cloudy-background-wallpaper-92227_w635.webp" style="height:250px; width: 180px;">
+                </div>
+                <div class="flip-card-back">
+                  <h1>Pubg</h1> 
+                  <a href="payment.html"><button type="button" class="btn btn-primary" style="width: 110px; color: rgb(252, 158, 245);">ORDER NOW</button></a><br/>
+                  <i class="fa fa-cart-arrow-down" style="font-size:48px;color:rgb(243, 235, 235)"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsviHUb48YPt-7Xihle1Kd0EDKf98v2OUqMQ&usqp=CAU" style="height:250px; width: 180px;">
+                </div>
+                <div class="flip-card-back">
+                  <h1>Squid gemes</h1> 
+                  <a href="payment.html"><button type="button" class="btn btn-primary" style="width: 110px; color: rgb(252, 158, 245);">ORDER NOW</button></a><br/>
+                  <i class="fa fa-cart-arrow-down" style="font-size:48px;color:rgb(243, 235, 235)"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="https://i.pinimg.com/736x/a7/65/84/a76584b3c0a93913963beab433825b3a.jpg" style="height:250px; width: 180px;">
+                </div>
+                <div class="flip-card-back">
+                  <h1>Matrix</h1> 
+                  <a href="payment.html"><button type="button" class="btn btn-primary" style="width: 110px; color: rgb(252, 158, 245);">ORDER NOW</button></a><br/>
+                  <i class="fa fa-cart-arrow-down" style="font-size:48px;color:rgb(243, 235, 235)"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/dc/Resident_Evil_3.jpg/220px-Resident_Evil_3.jpg" style="height:250px; width: 180px;">
+                </div>
+                <div class="flip-card-back">
+                  <h1>Resident Evil 3</h1> 
+                  <a href="payment.html"><button type="button" class="btn btn-primary" style="width: 110px; color: rgb(252, 158, 245);">ORDER NOW</button></a><br/>
+                  <i class="fa fa-cart-arrow-down" style="font-size:48px;color:rgb(243, 235, 235)"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+              
+    </div>
+        <div class="row child">
+          <div class="col-sm-3">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="https://i.gadgets360cdn.com/products/large/MV5BMjM3YTlhYmQtZWIwNC00NWQ3LThlMTAtM2FhODBiMGMzZTE3XkEyXkFqcGdeQXVyNTgyNTA4MjM-.-V1-FMjpg-UX1000-1000x1500-1666785273.jpg" style="height:250px; width: 180px;">
+                </div>
+                <div class="flip-card-back">
+                  <h1>Forza</h1> 
+                  <a href="payment.html"><button type="button" class="btn btn-primary" style="width: 110px; color: rgb(252, 158, 245);">ORDER NOW</button></a><br/>
+                  <i class="fa fa-cart-arrow-down" style="font-size:48px;color:rgb(243, 235, 235)"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="https://store-images.s-microsoft.com/image/apps.15390.14471421918435459.3615d8d5-10ca-4c2f-b3e5-e8c97fe18682.abd3cc95-35b2-40d0-8b62-33ced0101eec?mode=scale&q=90&h=225&w=150" style="height:250px; width: 180px;">
+                </div>
+                <div class="flip-card-back">
+                  <h1>Aspalt 9</h1> 
+                  <a href="payment.html"><button type="button" class="btn btn-primary" style="width: 110px; color: rgb(252, 158, 245);">ORDER NOW</button></a><br/>
+                  <i class="fa fa-cart-arrow-down" style="font-size:48px;color:rgb(243, 235, 235)"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="https://image.api.playstation.com/vulcan/ap/rnd/202306/1219/60eca3ac155247e21850c7d075d01ebf0f3f5dbf19ccd2a1.jpg" style="height:250px; width: 180px;">
+                </div>
+                <div class="flip-card-back">
+                  <h1>Spider Man</h1> 
+                  <a href="payment.html"><button type="button" class="btn btn-primary" style="width: 110px; color: rgb(252, 158, 245);">ORDER NOW</button></a><br/>
+                  <i class="fa fa-cart-arrow-down" style="font-size:48px;color:rgb(243, 235, 235)"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="https://upload.wikimedia.org/wikipedia/en/a/a7/God_of_War_4_cover.jpg" style="height:250px; width: 180px;">
+                </div>
+                <div class="flip-card-back">
+                  <h1>God Of Wars</h1> 
+                  <a href="payment.html"><button type="button" class="btn btn-primary" style="width: 110px; color: rgb(252, 158, 245);">ORDER NOW</button></a><br/>
+                  <i class="fa fa-cart-arrow-down" style="font-size:48px;color:rgb(243, 235, 235)"></i>
+                </div>
+              </div>
+            </div>
+          </div>      
+        </div>
+        <div class="row child">
+            <div class="col-sm-3">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="https://www.gameinformer.com/sites/default/files/styles/product_box_art/public/2021/04/19/bce7dfa5/rust.jpg" style="height:250px; width: 180px;">
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>Rust</h1> 
+                    <a href="payment.html"><button type="button" class="btn btn-primary" style="width: 110px; color: rgb(252, 158, 245);">ORDER NOW</button></a><br/>
+                  <i class="fa fa-cart-arrow-down" style="font-size:48px;color:rgb(243, 235, 235)"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="https://m.media-amazon.com/images/M/MV5BYWIzYjUzMGUtZjJlNy00MWVlLWJjNGEtODU1OWFiOWIwOTFjXkEyXkFqcGdeQXVyNTgyNTA4MjM@._V1_FMjpg_UX1000_.jpg" style="height:250px; width: 180px;">
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>Minecraft </h1> 
+                    <a href="payment.html"><button type="button" class="btn btn-primary" style="width: 110px; color: rgb(252, 158, 245);">ORDER NOW</button></a><br/>
+                  <i class="fa fa-cart-arrow-down" style="font-size:48px;color:rgb(243, 235, 235)"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/46/TheForest_Game.jpg/220px-TheForest_Game.jpg" style="height:250px; width: 180px;">
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>The Forest</h1> 
+                    <a href="payment.html"><button type="button" class="btn btn-primary" style="width: 110px; color: rgb(252, 158, 245);">ORDER NOW</button></a><br/>
+                  <i class="fa fa-cart-arrow-down" style="font-size:48px;color:rgb(243, 235, 235)"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH6eHVEoyMEXKLivSgRenVH33kWiUHrs29BJOt9TmGzprGVZvZthMEmzA-bvGl9-7i75A&usqp=CAU" style="height:250px; width: 180px;">
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>The Long Dark</h1> 
+                    <a href="payment.html"><button type="button" class="btn btn-primary" style="width: 110px; color: rgb(252, 158, 245);">ORDER NOW</button></a><br/>
+                  <i class="fa fa-cart-arrow-down" style="font-size:48px;color:rgb(243, 235, 235)"></i>
+                  </div>
+                </div>
+              </div>
+            </div>      
+          </div>
+          <div class="row">
+            <h1 style="color: #ffffff; text-align: center;">Horror</h1>
+          </div>
+          <div class="row child">
+            <div class="col-sm-3">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="https://play-lh.googleusercontent.com/-ZKAj08xVPz1nouSZGa877W8Cyw2tEP7L_uB81wkHuISPi_0bGzPcNn4Lpf3YYywGMz2" style="height:250px; width: 180px;">
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>Scary Horror 2</h1> 
+                    <a href="payment.html"><button type="button" class="btn btn-primary" style="width: 110px; color: rgb(252, 158, 245);">ORDER NOW</button></a><br/>
+                  <i class="fa fa-cart-arrow-down" style="font-size:48px;color:rgb(243, 235, 235)"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="https://img.freepik.com/premium-photo/movie-poster-design_841014-8862.jpg?size=626&ext=jpg" style="height:250px; width: 180px;">
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>Thee Ttaler </h1> 
+                    <a href="payment.html"><button type="button" class="btn btn-primary" style="width: 110px; color: rgb(252, 158, 245);">ORDER NOW</button></a><br/>
+                  <i class="fa fa-cart-arrow-down" style="font-size:48px;color:rgb(243, 235, 235)"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/8/84/Little_Nightmares_II_cover.jpg" style="height:250px; width: 180px;">
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>Little Nightmares</h1> 
+                    <a href="payment.html"><button type="button" class="btn btn-primary" style="width: 110px; color: rgb(252, 158, 245);">ORDER NOW</button></a><br/>
+                  <i class="fa fa-cart-arrow-down" style="font-size:48px;color:rgb(243, 235, 235)"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="https://images.igdb.com/igdb/image/upload/t_cover_small/co2s5q.png" style="height:250px; width: 180px;">
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>Until Dawn</h1> 
+                    <a href="payment.html"><button type="button" class="btn btn-primary" style="width: 110px; color: rgb(252, 158, 245);">ORDER NOW</button></a><br/>
+                  <i class="fa fa-cart-arrow-down" style="font-size:48px;color:rgb(243, 235, 235)"></i>
+                  </div>
+                </div>
+              </div>
+            </div>      
+          </div>
+    </div>
+</div>
+</div><br/>
+<footer class="footer">
+  <div class="container">
+      <div class="row">
+          <div class="footer-col">
+              <h4>Company</h4>
+              <nav>
+                  <a href="index.html">Home</a>
+                  <a href="about.html">About</a>
+                  <a href="contact.html">Contact</a>
+                  <a href="#">Affiliate Program</a>
+              </nav>
+          </div>
+          <div class="footer-col">
+              <h4> Get help</h4>
+              <nav>
+                  <a href="#">FAQ</a>
+                  <a href="#">Shipping</a>
+                  <a href="#">Returns</a>
+                  <a href="#">Order Status</a>
+                  <a href="#">Payment Options</a>
+              </nav>
+          </div>
+          <div class="footer-col">
+              <h4>Oline shop</h4>
+              <nav>
+                  <a href="#">Play Stations</a>
+                  <a href="#">Controllers</a>
+                  <a href="#">Watch</a>
+                  <a href="#">Bag</a>
+          </div>
+          <div class="footer-col">
+              <h4>Follow us</h4>
+              <div class="icons">
+                  <a href="#" class="fa fa-linkedin" style="font-size: 20px;"></a>
+                  <a href="#" class="fa fa-facebook" style="font-size: 20px;"></a>
+                  <a href="#" class="fa fa-twitter" style="font-size: 20px;"></a> 
+              </div>
+          </div>
+  </div>
+</footer>
+</body>
+</html>

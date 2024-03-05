@@ -1,0 +1,732 @@
+<! DOCTYPE html>
+<html>
+<head>
+    <title>Game Zone</title>
+    <link rel="stylesheet" href="css/styles3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap-grid.min.css" integrity="sha512-ZuRTqfQ3jNAKvJskDAU/hxbX1w25g41bANOVd1Co6GahIe2XjM6uVZ9dh0Nt3KFCOA061amfF2VeL60aJXdwwQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins', sans-serif;
+}
+body{
+  overflow-x: hidden;
+}
+ul {
+  list-style-type: none;
+  margin: 10px;
+  padding: 10px;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #3f3939;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  list-style-type: none;
+}
+li a:hover:not(.active) {
+  background-color: #ddd;
+}
+.active {
+  background-color: #04AA6D;
+}
+  .carousel-caption{
+    width: 100%;
+    height: 530px;
+    background-position: center;
+    padding: 0 8%;
+    position: relative;
+}
+  .text-box{
+    color: #fff;
+    position: absolute;
+    float: right;
+}
+.text-box p{
+    font-size: 50px;
+    font-weight: 600;
+}
+.text-box h1{
+    font-size: 90px;
+    line-height: 110px;
+    margin-left: -10px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    -webkit-background-clip: text;
+    background-position: 0;
+    animation: back 20s linear infinite;
+}
+@keyframes back{
+    100%{
+    background-position: 2000px 0;
+    }
+}
+.text-box h3{
+    font-size: 35px;
+    font-weight: 400;
+}
+.wrapper{
+  max-width: 1260px;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  height: 200px;
+}
+.wrapper .box{
+  background: #fff;
+  border-radius: 3px;
+  padding: 25px;
+  width: calc(33% - 10px);
+}
+
+.wrapper .box .content{
+ padding-top: 10px;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+.wrapper .box .info .name{
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.wrapper .box .content .image{
+  height: 75px;
+  width: 75px;
+  padding: 3px;
+  background: #17a2b8;
+  border-radius: 50%;
+}
+.box .content .image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #fff
+}
+
+@media (max-width: 1045px){
+  .wrapper .box{
+      width: calc(50% - 10px);
+      margin: 10px 0;
+  }
+}
+@media (max-width: 702px){
+  .wrapper .box{
+      width:100%;
+  }
+}
+.container1{
+  width: 100%;
+  height: 530px;
+  background-position: center;
+  padding: 0 8%;
+  position: relative;
+}
+.text-box{
+  color: #fff;
+  position: absolute;
+}
+.text-box p{
+  font-size: 40px;
+  font-weight: 600;
+  padding-top: 15px;
+}
+.text-box h1{
+  font-size: 50px;
+  line-height: 110px;
+  margin-left: -10px;
+  color: transparent;
+  background-position: 0;
+  animation: back 20s linear infinite;
+}
+@keyframes back{
+  100%{
+  background-position: 2000px 0;
+  }
+}
+.text-box h3{
+  font-size: 35px;
+  font-weight: 400;
+  overflow-y: hidden;
+}
+.container{
+  border-radius: 40px;
+}
+.container1{
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  margin: 0 auto;
+  height: 600px;
+}
+
+.it {
+  background-image: url(https://videogames.si.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTk5MTI0Njg4NDMyMDE1MTIx/cyberpunk-2077-night-city.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 1000px;
+  width: 100%;
+ }
+ .child{
+  margin-top: 200px;
+  padding: 80px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: 30px;
+ }
+ .contact{
+  width: 80%;
+  margin: 50px auto;
+}
+.contact-box{
+  background:whitesmoke;
+  opacity: 0.7;
+  display: flex;
+}
+.contact-left{
+  flex-basis: 60%;
+  padding: 40px 60px;
+}
+.contact-right{
+  flex-basis: 40%;
+  padding: 40px;
+  background:blue;
+  opacity: 0.7;
+  color: #fff;
+}
+h1{
+  margin-bottom: 10px;
+}
+.contact p{
+  margin-bottom: 40px;
+}
+.input-row{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.input-row .input-group{
+  flex-basis: 45%;
+}
+input{
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  padding-bottom: 5px;
+}
+textarea{
+  width: 100%;
+  border: 1px solid #ccc;
+  outline: none;
+  padding: 10px;
+  box-sizing: border-box;
+}
+label{
+  margin-bottom: 6px;
+  display: block;
+  color: gray;
+}
+button{
+  background: rgb(237, 236, 247);
+  width: 100px;
+  border: none;
+  outline: none;
+  color: #d8d3d3;
+  height: 35px;
+  border-radius: 30px;
+  margin-top: 20px;
+  box-shadow: 0px 5px 15px 0px rgba(28,0,181,0.3);
+}
+.contact-left h3{
+  color: gray;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.contact-right h3{
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+tr td:first-child{
+  padding-right: 20px;
+}
+.container-fluied .child{
+  padding: 80px;
+  margin: 0 auto;
+  box-sizing: 50px;
+ }
+ .flip-card {
+  border-radius: 10%;
+  height:250px; 
+  width: 180px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute; 
+  height:250px; 
+  width: 180px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background: linear-gradient(45deg, #7e7d7d, #8d2239, #ff1b32, #716464);
+  color: white;
+  transform: rotateY(180deg);
+}
+.container{
+  max-width: 1170px;
+  margin: auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+nav{
+  list-style: none;
+}
+.footer{
+  background-color: #24262b;
+  padding: 70px 0;
+}
+.footer-col{
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4{
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col nav:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-col nav a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col nav a :hover{
+  color: #ffffff;
+  padding-left: 8px;
+}
+.fa {
+padding: 20px;
+font-size: 30px;
+width: 60px;
+text-align: center;
+text-decoration: none;
+margin: 5px 2px;
+border-radius: 50%;
+  }
+.fa:hover {
+opacity: 0.7;
+}
+.fa-facebook {
+background: #3B5998;
+color: white;
+}
+
+.fa-twitter {
+background: #55ACEE;
+color: white;
+}
+.fa-linkedin {
+background: #007bb5;
+color: white;
+}
+  </style>
+</head>
+<body>
+  <div class="row">
+    <div class="row">
+      <div class="col-sm-2">
+        <a href="index.html"><img src="images/game.png" style="height: 70px; width: 90px;"></a>
+      </div>
+      <div class="col-sm-10">
+          <nav >
+              <ul style="float: right; ">
+                  <li><a class="active" href="index.html" style="text-decoration: none; list-style-type: none;">Home</a></li>
+                  <li><a href="about.html" style="text-decoration: none; list-style-type: none;">About</a></li>
+                  <li><a href="contact.html" style="text-decoration: none; list-style-type: none;">Contact</a></li>
+                  <li><a href="shopnow.html" style="text-decoration: none; list-style-type: none;">Shopw Now</a></li>
+                  <li><a href="#" style="text-decoration: none; list-style-type: none;">Server</a></li>
+                </ul>
+            </nav> 
+      </div>
+  </div>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+  
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+       
+  
+        <div class="item active" style="height: 700px; width: 100%;">
+          <img src="https://img.freepik.com/premium-photo/scenes-from-unreal-robotic-world_830188-6327.jpg" style="height: 700px; width: 100%;">
+        </div>
+  
+        <div class="item" style="height: 700px; width: 100%;">
+          <img src="https://img.freepik.com/premium-photo/artificial-intelligence-humanoid-cyber-android-with-neural-network_827343-71.jpg?size=626&ext=jpg&ga=GA1.1.1880011253.1699228800&semt=ais" style="height: 700px; width: 100%;">
+        </div>
+      
+        <div class="item"style="height: 700px; width: 100%;">
+          <img src="https://img.freepik.com/premium-photo/futuristic-robot-with-red-glowing-eyes-3d-rendering_997053-504.jpg" style="height: 700px; width: 100%;">
+        </div>
+    
+      </div>
+  
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" style="line-height: 20;"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" style="line-height: 20;"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div><br>
+  <div class="container">
+  <div class="wrapper" style=" background-color: rgb(90, 90, 120);"">
+    <div class="box" style="background-color: rgb(131, 131, 146);">
+        <p>In promotion and advertising, a testimonial or show consists of a person's written or spoken statement extolling the virtue of a product. 
+            </p>
+    </div>
+    <div class="box" style="background-color: rgb(131, 131, 146);">
+        <p>In promotion and advertising, a testimonial or show consists of a person's written or spoken statement extolling the virtue of a product. 
+            </p>
+    </div>
+    <div class="box" style="background-color: rgb(131, 131, 146);">
+        <p>In promotion and advertising, a testimonial or show consists of a person's written or spoken statement extolling the virtue of a product. 
+           </p>
+    </div>
+  </div>
+  </div><br/>
+  <div class="container" style="height: 600px; ">
+    <div class="container1" style="background-image: url(https://browsecat.art/sites/default/files/4k-cypher-valorant-wallpapers-76657-283614-1120840.png);>
+      <div class="col-sm-6">
+        <div class="container1">
+          <div class="text-box">
+              <p>start your game</p>
+              <h1>Unlock Your Gaming<br/> Full Potential</h1>
+              <h3>Aute esse non magna elit dolore dolore dolor sit est. Ea occaecat ea duis laborum reprehenderit id cillum 
+                tempor cupidatat qui nisi proident nostrud dolore id do eiusmod. Lorem ipsum non labore.</h3><br/>
+                <button type="button" class="btn btn-primary" style="width: 270px;">ORDER YOUR GAME SERVER NOW</button>
+          </div>
+       </div>
+      </div>   
+    </div>
+  </div>
+  <div class="container">
+    <div>
+      <h4 style="border: 2px;">Customer reviews</h4>
+      <h2 style="font-size: 50px; line-height: 110px;">4.85 out of 5</h2>
+    </div>
+  </div>
+  <div class="container-fluied">
+    <div class="wrapper" style="height: 400px; background-color: rgb(90, 90, 120);">
+      <div class="box" style="background-color: rgb(131, 131, 146);">
+          <i class="fas fa-quote-left quote"></i>
+          <p style="color: aliceblue;">In promotion and advertising, a testimonial or show consists of a person's written or spoken statement extolling the virtue of a product. 
+              The term "testimonial" most commonly applies to the sales-pitches attributed to ordinary citizens, whereas the word "endorsement" usually
+              </p>
+          <div class="content">
+          <div class="image">
+              <img src="images/icon.png" alt="">
+            </div>
+         </div>
+      </div>
+      <div class="box" style="background-color: rgb(131, 131, 146);">
+          <i class="fas fa-quote-left quote"></i>
+          <p style="color: aliceblue;">In promotion and advertising, a testimonial or show consists of a person's written or spoken statement extolling the virtue of a product. 
+              The term "testimonial" most commonly applies to the sales-pitches attributed to ordinary citizens, whereas the word "endorsement" usually
+              a testimonial or show consists of a person's written or spoken statement extolling the virtue of a product. 
+              Celebrity endorsements have proven very successful in China, where increasing consumerism makes the purchase of an endorsed product into a status symbol. </p>
+          <div class="content">
+          <div class="image">
+              <img src="images/icon.png" alt="">
+            </div>
+         </div>
+      </div>
+      <div class="box" style="background-color: rgb(131, 131, 146);">
+          <i class="fas fa-quote-left quote"></i>
+          <p style="color: aliceblue;">In promotion and advertising, a testimonial or show consists of a person's written or spoken statement extolling the virtue of a product. 
+              The term "testimonial" most commonly applies to the sales-pitches attributed to ordinary citizens, whereas the word "endorsement" usually
+              </p>
+          <div class="content">
+          <div class="image">
+              <img src="images/icon.png" alt="">
+            </div>
+         </div>
+      </div>
+  </div>
+  </div><br/><br/><br/>
+  <div class="container">
+    <div class="row" style="background-color: rgb(90, 90, 120);">
+      <div class="col-sm-6">
+          <img src="https://madebydesignesia.com/themes/playhost/images/misc/server.webp" style="height:400px; width: 100%; margin: 10px 0 0 10px;">
+          
+      </div>
+      <div class="col-sm-6">
+          <h1>servers available worldwide for your game.</h1>
+          <p style="padding: 10px; text-align: justify;">Dedicated servers simulate game worlds without supporting direct input or output, except that required for their administration. Players must connect to the server with separate client programs in order to see and interact with the game.
+            The foremost advantage of dedicated servers is their suitability for hosting in professional data centers, with all of the reliability and performance benefits that entails. Remote hosting also eliminates the low-latency advantage that would otherwise be held by any player who hosts and connects to a server from the same machine or local network.
+            Listen servers run in the same process as a game client. They otherwise function like dedicated servers, but typically have the disadvantage of having to communicate with remote players over the residential internet connection of the hosting player.</p>
+            <button type="button" class="btn btn-info">More Info</button>
+      </div>
+    </div>
+  </div><br/>
+  <div class="it">
+  <div class="container-fluied">
+  <div class="row child">
+    <div class="col-sm-3">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmrcMKsgXBjMqU99xTR5-oxVJfFDU6-BNmxRIwUY0-QifHxWYl7aSD-agh4jqudfN_ELI&usqp=CAU" style="height:250px; width: 180px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Call Of Duty</h1> 
+            <a href="payment.html"><button type="button" class="btn btn-primary" style="width: 110px; color: rgb(252, 158, 245);">ORDER NOW</button></a><br/>
+                  <i class="fa fa-cart-arrow-down" style="font-size:48px;color:rgb(243, 235, 235)"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="https://w0.peakpx.com/wallpaper/196/975/HD-wallpaper-gta-v.jpg" style="height:250px; width: 180px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>GTA</h1> 
+            <a href="payment.html"><button type="button" class="btn btn-primary" style="width: 110px; color: rgb(252, 158, 245);">ORDER NOW</button></a><br/>
+                  <i class="fa fa-cart-arrow-down" style="font-size:48px;color:rgb(243, 235, 235)"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="https://e0.pxfuel.com/wallpapers/843/748/desktop-wallpaper-phone-gamer-android-ios-game-iphone-best-gaming-gaming-mobile-gamer-thumbnail.jpg" style="height:250px; width: 180px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Game Zone</h1> 
+            <a href="payment.html"><button type="button" class="btn btn-primary" style="width: 110px; color: rgb(252, 158, 245);">ORDER NOW</button></a><br/>
+                  <i class="fa fa-cart-arrow-down" style="font-size:48px;color:rgb(243, 235, 235)"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="https://i.pinimg.com/originals/01/14/8a/01148aa6890051055e6dcf3c85cbe7f7.jpg" style="height:250px; width: 180px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Free Fire</h1> 
+            <a href="payment.html"><button type="button" class="btn btn-primary" style="width: 110px; color: rgb(252, 158, 245);">ORDER NOW</button></a><br/>
+                  <i class="fa fa-cart-arrow-down" style="font-size:48px;color:rgb(243, 235, 235)"></i>
+          </div>
+        </div>
+      </div>
+    </div>      
+  </div>
+  <div class="row child">
+    <div class="col-sm-3">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="https://cdn.bhdw.net/im/are-you-ready-playerunknown-s-battlegrounds-guy-cloudy-background-wallpaper-92227_w635.webp" style="height:250px; width: 180px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Pubg</h1> 
+            <a href="payment.html"><button type="button" class="btn btn-primary" style="width: 110px; color: rgb(252, 158, 245);">ORDER NOW</button></a><br/>
+                  <i class="fa fa-cart-arrow-down" style="font-size:48px;color:rgb(243, 235, 235)"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsviHUb48YPt-7Xihle1Kd0EDKf98v2OUqMQ&usqp=CAU" style="height:250px; width: 180px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Squid gemes</h1> 
+            <a href="payment.html"><button type="button" class="btn btn-primary" style="width: 110px; color: rgb(252, 158, 245);">ORDER NOW</button></a><br/>
+                  <i class="fa fa-cart-arrow-down" style="font-size:48px;color:rgb(243, 235, 235)"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="https://i.pinimg.com/736x/a7/65/84/a76584b3c0a93913963beab433825b3a.jpg" style="height:250px; width: 180px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Matrix</h1> 
+            <a href="payment.html"><button type="button" class="btn btn-primary" style="width: 110px; color: rgb(252, 158, 245);">ORDER NOW</button></a><br/>
+                  <i class="fa fa-cart-arrow-down" style="font-size:48px;color:rgb(243, 235, 235)"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/dc/Resident_Evil_3.jpg/220px-Resident_Evil_3.jpg" style="height:250px; width: 180px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Resident Evil 3</h1> 
+            <a href="payment.html"><button type="button" class="btn btn-primary" style="width: 110px; color: rgb(252, 158, 245);">ORDER NOW</button></a><br/>
+                  <i class="fa fa-cart-arrow-down" style="font-size:48px;color:rgb(243, 235, 235)"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+        
+</div>
+      <div class="row">
+        <button type="button" class="btn btn-info" style="width: 200px; margin: auto;"><a href="nav.html" style="text-decoration: none; list-style-type: none;">View more</a></button>
+      </div>
+  </div>
+  </div><br/><br/>
+  <div class="container">
+  <div class="row" style="background-image: url(https://wallpapercave.com/wp/4joHxWG.jpg); background-repeat: no-repeat; background-size: cover;" >
+    <div class="col-sm-6">
+        <h1 style="color:#C0C0C0;  margin-top: 10px; padding: 10px; font-size: 55px;">Manage your server</h1>
+        <h2 style="color:#f7eaea;  margin-top: 10px; padding: 10px; font-size: 55px;"> from mobile device</h2>
+        <p style="font-size: 20px; color: aliceblue;">Enim sit laborum enim ut in excepteur aliqua consequat est ut aliquip nostrud sunt deserunt consequat fugiat adipisicing minim aliquip do
+           adipisicing cupidatat esse ut irure incididunt ullamco ut aliquip nostrud sunt deserunt consequat fugiat adipisicing minim aliquip do dolor laboris anim ea do ut anim.</p><br/>
+           <a  href="#"><img src="https://madebydesignesia.com/themes/playhost/images/misc/download-appstore.webp"></a>
+           <a  href="#"><img src="https://madebydesignesia.com/themes/playhost/images/misc/download-playstore.webp"></a>
+    </div>
+  </div>
+  </div><br/><br/><br/><br/><br/>
+  <div class="container" style="background-color: rgb(131, 131, 146);">
+    <div class="col-sm-6">
+        <h1 style="color:rgb(255, 255, 255);  margin-top: 10px; padding: 10px;">Payment Methods</h1>
+        <p style=" font-size: 40px;">We accept</p>
+    </div>
+    <div class="col-sm-6">
+        <a ><img src="https://madebydesignesia.com/themes/playhost/images/payments/visa.webp" style="width: 100px; margin-top: 10px;"></a>
+        <a ><img src="https://madebydesignesia.com/themes/playhost/images/payments/mastercard.webp" style="width: 100px; margin-top: 10px;"></a>
+        <a ><img src="https://madebydesignesia.com/themes/playhost/images/payments/paypal.webp" style="width: 100px; margin-top: 10px;"></a>
+        <a ><img src="https://madebydesignesia.com/themes/playhost/images/payments/jcb.webp" style="width: 100px; margin-top: 10px;"></a>
+    </div>
+  </div><br/>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <nav>
+                      <a href="index.html">Home</a>
+                      <a href="about.html">About</a>
+                      <a href="contact.html">Contact</a>
+                      <a href="#">Affiliate Program</a>
+                    </nav>
+                </div>
+                <div class="footer-col">
+                    <h4> Get help</h4>
+                    <nav>
+                        <a href="#">FAQ</a>
+                        <a href="#">Shipping</a>
+                        <a href="#">Returns</a>
+                        <a href="#">Order Status</a>
+                        <a href="#">Payment Options</a>
+                    </nav>
+                </div>
+                <div class="footer-col">
+                    <h4>Oline shop</h4>
+                    <nav>
+                        <a href="#">Play Stations</a>
+                        <a href="#">Controllers</a>
+                        <a href="#">Watch</a>
+                        <a href="#">Bag</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="icons">
+                        <a href="#" class="fa fa-linkedin" style="font-size: 20px;"></a>
+                        <a href="#" class="fa fa-facebook" style="font-size: 20px;"></a>
+                        <a href="#" class="fa fa-twitter" style="font-size: 20px;"></a> 
+                    </div>
+                </div>
+        </div>
+    </footer>
+</body>
+</html>

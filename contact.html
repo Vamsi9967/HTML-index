@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap-grid.min.css" integrity="sha512-ZuRTqfQ3jNAKvJskDAU/hxbX1w25g41bANOVd1Co6GahIe2XjM6uVZ9dh0Nt3KFCOA061amfF2VeL60aJXdwwQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-image: url(https://t3.ftcdn.net/jpg/05/99/53/58/360_F_599535831_pwQFVG0qtf6ksLXeVTnUwFMvoW5H0WiS.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 14px;
+    overflow-x: hidden;
+}
+ul {
+  list-style-type: none;
+  margin: 10px;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #3f3939;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  list-style-type: none;
+}
+li a:hover:not(.active) {
+  background-color: #ddd;
+}
+.active {
+  background-color: #04AA6D;
+}
+.contact{
+    width: 80%;
+    margin: 50px auto;
+}
+.contact-box{
+    background:whitesmoke;
+    opacity: 0.8;
+    display: flex;
+}
+.contact-left{
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+.contact-right{
+    flex-basis: 40%;
+    padding: 40px;
+    background:blue;
+    opacity: 0.8;
+    color: #fff;
+}
+h1{
+    margin-bottom: 10px;
+}
+.contact p{
+    margin-bottom: 40px;
+}
+.input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.input-row .input-group{
+    flex-basis: 45%;
+}
+input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding-bottom: 5px;
+}
+textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+label{
+    margin-bottom: 6px;
+    display: block;
+    color: gray;
+}
+button{
+    background: #1c00b5;
+    width: 100px;
+    border: none;
+    outline: none;
+    color: #fff;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px 0px rgba(28,0,181,0.3);
+}
+.contact-left h3{
+    color: gray;
+    font-weight: 600;
+  
+}
+.contact-right h3{
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+tr td:first-child{
+    padding-right: 20px;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+nav{
+  list-style: none;
+}
+.footer{
+  background-color: #24262b;
+  padding: 70px 0;
+}
+.footer-col{
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4{
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col nav:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-col nav a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col nav a :hover{
+  color: #ffffff;
+  padding-left: 8px;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+        }
+  .fa:hover {
+      opacity: 0.7;
+  }
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  </style>
+</head>
+<body>
+    <div class="row">
+        <div class="col-sm-2">
+          <a href="index.html"><img src="images/game.png" style="height: 70px; width: 90px;"></a>
+        </div>
+        <div class="col-sm-10">
+            <nav style="float: right;">
+                <ul>
+                    <li><a href="index.html" style="text-decoration: none; list-style-type: none;">Home</a></li>
+                    <li><a href="about.html" style="text-decoration: none; list-style-type: none;">About</a></li>
+                    <li><a class="active" href="contact.html" style="text-decoration: none; list-style-type: none;">Contact</a></li>
+                    <li><a href="shopnow.html" style="text-decoration: none; list-style-type: none;">Shop Now</a></li>
+                    <li><a href="#" style="text-decoration: none; list-style-type: none;">Server</a></li>
+                  </ul>
+              </nav> 
+        </div>
+    </div>
+        <div class="contact">
+            <h1 style="color: aqua;">Contact Us</h1>
+            <p style="color: aqua;">this is contact form</p>
+            <div class="contact-box">
+                <div class ="contact-left">
+                     <h3>Send ur request</h3>
+                     <form>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>Name</label>
+                                <input type="text" placeholder="Tony Stark">
+                            </div>
+                            <div class="input-group">
+                                <label>Phone</label>
+                                <input type="text" placeholder="+1 385 630 2962">
+                            </div>
+                        </div>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>Email</label>
+                                <input type="text" placeholder="TonyStark@gmail,com">
+                            </div>
+                            <div class="input-group">
+                                <label>Subject</label>
+                                <input type="text" placeholder="product demo">
+                            </div>
+                        </div>
+
+                        <label>Message</label>
+                        <textarea rows="5" placeholder="Your Message"></textarea>
+                        <button type="submit">SEND</button>
+                    </form>
+
+
+                </div>
+                <div class ="contact-right">
+                    <h4>Reach us</h4>
+                    <table>
+                        <tr>
+                            <td>Email</td>
+                            <td>contatus@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Phone</td>
+                            <td>+1 013 865 7654</td>
+                        </tr>
+
+                        <tr>
+                            <td>Address</td>
+                            <td>212 stark Tower, New york city,<br> 
+                            new york, usa</td>
+                        </tr>
+                    </table><br/>
+                    <div class="icons">
+                    <a href="#" class="fa fa-linkedin" style="font-size: 20px;"></a>
+                    <a href="#" class="fa fa-facebook" style="font-size: 20px;"></a>
+                    <a href="#" class="fa fa-twitter" style="font-size: 20px;"></a>
+                    
+            </div>
+
+    </div>
+    </div><br/>
+    <footer class="footer">
+        <div class="container-fluied">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <nav>
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="#">Affiliate Program</a>
+                    </nav>
+                </div>
+                <div class="footer-col">
+                    <h4> Get help</h4>
+                    <nav>
+                        <a href="#">FAQ</a>
+                        <a href="#">Shipping</a>
+                        <a href="#">Returns</a>
+                        <a href="#">Order Status</a>
+                        <a href="#">Payment Options</a>
+                    </nav>
+                </div>
+                <div class="footer-col">
+                    <h4>Oline shop</h4>
+                    <nav>
+                        <a href="#">Play Stations</a>
+                        <a href="#">Controllers</a>
+                        <a href="#">Watch</a>
+                        <a href="#">Bag</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="icons">
+                        <a href="#" class="fa fa-linkedin" style="font-size: 20px;"></a>
+                        <a href="#" class="fa fa-facebook" style="font-size: 20px;"></a>
+                        <a href="#" class="fa fa-twitter" style="font-size: 20px;"></a> 
+                    </div>
+                </div>
+        </div>
+    </footer>
+</body>
+</html>
